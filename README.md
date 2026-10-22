@@ -2,6 +2,10 @@
 
 스마트홈 월패드 앱과 ESP32 기반 장치를 함께 관리하는 통합 프로젝트입니다.
 
+## Android 앱 화면
+
+![스마트홈 월패드 조명 화면](Android_App/assets/app-dashboard.png)
+
 ## 구성
 
 | 폴더 | 설명 |
