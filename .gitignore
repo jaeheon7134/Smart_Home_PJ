@@ -21,6 +21,9 @@ Android_App/*.iml
 **/*.py[cod]
 **/.vscode/
 
+# Private development notes
+/개발문서/
+
 # Operating system files
 .DS_Store
 Thumbs.db
