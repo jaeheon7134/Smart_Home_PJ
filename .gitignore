@@ -1,0 +1,26 @@
+# Android Studio / Gradle
+Android_App/.gradle/
+Android_App/.gradle-build/
+Android_App/.gradle-user/
+Android_App/.gradle-user-home/
+Android_App/.idea/
+Android_App/.kotlin/
+Android_App/build/
+Android_App/**/build/
+Android_App/local.properties
+Android_App/*.iml
+
+# ESP-IDF generated files and device-specific Wi-Fi settings
+**/build/
+**/sdkconfig
+**/sdkconfig.old
+**/debug.log
+
+# Python cache and editor settings
+**/__pycache__/
+**/*.py[cod]
+**/.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db

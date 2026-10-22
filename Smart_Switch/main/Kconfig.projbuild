@@ -1,0 +1,62 @@
+menu "Smart switch settings"
+
+config SMART_SWITCH_WIFI_SSID
+    string "Wi-Fi SSID"
+    default "YOUR_WIFI_SSID"
+    help
+        The 2.4 GHz Wi-Fi network name for the smart switch.
+
+config SMART_SWITCH_WIFI_PASSWORD
+    string "Wi-Fi password"
+    default "YOUR_WIFI_PASSWORD"
+    help
+        The password for the Wi-Fi network.
+
+config SMART_SWITCH_SERVO_GPIO
+    int "Servo 1 signal GPIO"
+    range 0 39
+    default 18
+
+config SMART_SWITCH_SERVO2_GPIO
+    int "Servo 2 signal GPIO"
+    range 0 39
+    default 19
+
+config SMART_SWITCH_ON_ANGLE
+    int "Servo 1 ON position (degrees)"
+    range 0 180
+    default 150
+
+config SMART_SWITCH_OFF_ANGLE
+    int "Servo 1 OFF position (degrees)"
+    range 0 180
+    default 30
+
+config SMART_SWITCH_NEUTRAL_ANGLE
+    int "Servo 1 neutral position (degrees)"
+    range 0 180
+    default 35
+
+config SMART_SWITCH_SERVO2_ON_ANGLE
+    int "Servo 2 ON position (degrees)"
+    range 0 180
+    default 150
+
+config SMART_SWITCH_SERVO2_OFF_ANGLE
+    int "Servo 2 OFF position (degrees)"
+    range 0 180
+    default 30
+
+config SMART_SWITCH_SERVO2_NEUTRAL_ANGLE
+    int "Servo 2 neutral position (degrees)"
+    range 0 180
+    default 35
+
+config SMART_SWITCH_ACTUATION_HOLD_MS
+    int "Switch press hold time (ms)"
+    range 0 10000
+    default 500
+    help
+        Time to hold a servo at its ON or OFF position before returning it to neutral.
+
+endmenu
